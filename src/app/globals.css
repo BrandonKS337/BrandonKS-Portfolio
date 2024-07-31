@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo-svg {
+  border: 2px solid white;
+  fill: white; /* This will apply if the SVG path does not have an explicit fill attribute */
+}
