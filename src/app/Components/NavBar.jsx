@@ -6,9 +6,9 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-wrap justify-between items-center py-2 px-8">
+    <div className="flex flex-wrap justify-between items-center py-2">
       <Image
-        src="/logos/logov2white.svg"
+        src="/assets/logos/logov2white.svg"
         alt="logo"
         width={100}
         height={100}
