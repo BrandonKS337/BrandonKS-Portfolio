@@ -1,7 +1,7 @@
 import React from "react";
 import { ABOUT_ME_TEXT } from "../constants";
 
-const secondProfileImage = "/assets/placeholderimages/placeholderProfile.jpg";
+const aboutMeImg = "/assets/placeholderimages/placeholderProfile.jpg";
 
 const AboutSection = () => {
   return (
@@ -13,7 +13,7 @@ const AboutSection = () => {
       <div className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2 lg:p-8 justify-centers">
           <img
-            src={secondProfileImage}
+            src={aboutMeImg}
             alt="Profile Image 2"
             className=" rounded-2xl"
           />

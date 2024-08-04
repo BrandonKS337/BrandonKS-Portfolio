@@ -2,6 +2,7 @@ import Image from "next/image";
 import NavBar from "./Components/NavBar";
 import HeroSection from "./Components/HeroSection";
 import AboutSection from "./Components/AboutSection";
+import TechStack from "./Components/TechStack";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <NavBar />
         <HeroSection />
         <AboutSection/>
+        <TechStack/>
       </div>
     </div>
   );
