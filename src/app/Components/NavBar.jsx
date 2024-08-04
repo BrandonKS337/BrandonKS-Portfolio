@@ -6,15 +6,17 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-wrap justify-between items-center py-2">
-      <Image
-        src="/assets/logos/logov2white.svg"
-        alt="logo"
-        width={100}
-        height={100}
-        className="text-red-500"
-      />
-      <p className="text-white flex flex-wrap text-4xl gap-4">
+    <nav className="mb-20 flex items-center justify-between py-6">
+      <div className="flex flex-shrink-0 items-center">
+        <Image
+          src="/assets/logos/logov2white.svg"
+          alt="logo"
+          width={100}
+          height={100}
+          className="text-red-500"
+        />
+      </div>
+      <div className="text-white flex flex-wrap text-4xl gap-4">
         <a
           href="https://www.linkedin.com/in/brandonks"
           target="_blank"
@@ -29,8 +31,8 @@ const NavBar = () => {
         >
           <FaGithub />
         </a>
-      </p>
-    </div>
+      </div>
+    </nav>
   );
 };
 

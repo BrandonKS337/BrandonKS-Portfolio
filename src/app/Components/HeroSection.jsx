@@ -27,7 +27,7 @@ const HeroSection = () => {
         {/* Hero Image */}
         <div className="w-full lg:w-1/2 lg:p-4 ">
           <div className="flex justify-center ">
-            <img src={profilePic} alt="Profile Hero Image" />
+            <img src={profilePic} alt="Profile Hero Image" className=" rounded-2xl"/>
           </div>
         </div>
       </div>
