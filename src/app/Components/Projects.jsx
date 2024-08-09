@@ -34,7 +34,7 @@ const Projects = () => {
                 width={400}
                 height={400}
                 className="my-6 rounded"
-              />
+              /><a href={project.URL}><button className="bg-green-500 text-black px-4 py-2 rounded-2xl">Click to Visit</button></a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
