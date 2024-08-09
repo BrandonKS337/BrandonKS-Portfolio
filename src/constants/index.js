@@ -97,3 +97,10 @@ export const PROJECTS = [
     URL: "https://github.com/BrandonKS337/Capstone",
   },
 ];
+
+export const CONTACT = 
+  {
+    address: 'Youngsville, LA',
+    phone: '337-254-4704',
+    email: 'BrandonKS337@gmail.com'
+  }

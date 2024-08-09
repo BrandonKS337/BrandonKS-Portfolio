@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { EXPERIENCES } from "../constants";
+import { EXPERIENCES } from "../../constants";
 
 const Experience = () => {
   return (

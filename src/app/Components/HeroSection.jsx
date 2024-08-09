@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { HERO_SECTION } from "../constants";
+import { HERO_SECTION } from "../../constants";
 import Image from "next/image";
 
 const profilePic = "/assets/placeholderimages/placeholderProfile.jpg";

@@ -5,6 +5,7 @@ import AboutSection from "./Components/AboutSection";
 import TechStack from "./Components/TechStack";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <TechStack/>
         <Experience/>
         <Projects/>
+        <Contact/>
       </div>
     </div>
   );

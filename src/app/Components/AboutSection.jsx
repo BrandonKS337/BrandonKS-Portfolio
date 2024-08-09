@@ -1,5 +1,5 @@
 import React from "react";
-import { ABOUT_ME_TEXT } from "../constants";
+import { ABOUT_ME_TEXT } from "../../constants";
 
 const aboutMeImg = "/assets/placeholderimages/placeholderProfile.jpg";
 

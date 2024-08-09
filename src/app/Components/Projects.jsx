@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { PROJECTS } from "../constants";
+import { PROJECTS } from "../../constants";
 import Image from "next/image";
 
 const Projects = () => {
