@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
-import AutoScroll from 'embla-carousel-auto-scroll';
+import React, { useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
@@ -21,8 +21,8 @@ import { CgMonday } from "react-icons/cg";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import { SiPostman } from "react-icons/si";
 import { SiSentry } from "react-icons/si";
-import { FaSlack }from "react-icons/fa";
-import { SiVercel }from "react-icons/si";
+import { FaSlack } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 
 const TechStack = () => {
   const technologies = [
@@ -37,12 +37,24 @@ const TechStack = () => {
     { Component: FaTrello, color: "text-cyan-500", label: "Trello" },
     { Component: PiFigmaLogoFill, color: "", label: "Figma" },
     { Component: SiMui, color: "text-cyan-400", label: "Material UI" },
-    { Component: RiTailwindCssFill, color: "text-cyan-400", label: "Tailwind CSS" },
+    {
+      Component: RiTailwindCssFill,
+      color: "text-cyan-400",
+      label: "Tailwind CSS",
+    },
     { Component: FaNodeJs, color: "text-green-500", label: "NodeJS" },
     { Component: FaAws, color: "text-blue-600", label: "AWS" },
     { Component: SiAmazonec2, color: "text-orange-500", label: "Amazon EC2" },
-    { Component: VscVscodeInsiders, color: "text-cyan-500", label: "VS Code Insiders" },
-    { Component: SiPostman, color: "text-orange-500 bg-white rounded-2xl", label: "Postman" },
+    {
+      Component: VscVscodeInsiders,
+      color: "text-cyan-500",
+      label: "VS Code Insiders",
+    },
+    {
+      Component: SiPostman,
+      color: "text-orange-500 bg-white rounded-2xl",
+      label: "Postman",
+    },
     { Component: SiSentry, color: "text-red-500", label: "Sentry" },
     { Component: FaSlack, color: "", label: "Slack" },
     { Component: SiVercel, color: "", label: "Vercel" },
@@ -51,7 +63,7 @@ const TechStack = () => {
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
-      align: 'center',
+      align: "center",
       speed: 1,
     },
     [
@@ -62,8 +74,9 @@ const TechStack = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
       <h2 className="mt-20 text-center text-4xl">Technologies</h2>
-      <p className="text-center m-20 px-15">
-        Here are a few of the technologies and resources I have familiarized myself with through direct project-based experience.
+      <p className="text-center my-16 lg:px-64">
+        Here are a few of the technologies and resources I have familiarized
+        myself with through direct project-based experience.
       </p>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
