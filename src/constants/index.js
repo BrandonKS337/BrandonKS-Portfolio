@@ -86,7 +86,7 @@ export const PROJECTS = [
     description:
       "Coral Marketplace is a simple solution to a unique problem by creating a space where Enthusiasts can Buy/Sell/Trade coral and coral related products. The application is focused around a user-centric design aiming to optimize the easy of finding a particular product in an every changing market inventory.",
     technologies: ["Figma", "NextJS", "MongoDB", "Trello", "NodeJS", "Docker"],
-    URL: "https://health-care-app-7rag.vercel.app/",
+    URL: "",
   },
   {
     title: "Fantasy Nexus",
