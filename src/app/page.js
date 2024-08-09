@@ -4,6 +4,7 @@ import HeroSection from "./Components/HeroSection";
 import AboutSection from "./Components/AboutSection";
 import TechStack from "./Components/TechStack";
 import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <AboutSection/>
         <TechStack/>
         <Experience/>
+        <Projects/>
       </div>
     </div>
   );

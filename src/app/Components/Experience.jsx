@@ -5,9 +5,9 @@ import { EXPERIENCES } from "../constants";
 
 const Experience = () => {
   return (
-    <div>
+    <div  className="border-b-2 border-neutral-800 pb-10">
       <h2 className="my-20 text-center text-4xl">Experience</h2>
-      <div className="border-b-2 border-neutral-800 pb-20">
+      <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <div className="w-full lg:w-1/4">
