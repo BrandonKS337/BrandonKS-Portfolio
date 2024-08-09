@@ -25,7 +25,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "2023-2024",
+    year: "2023 - 2024",
     role: "Full Stack Software Engineer - Instructor",
     company: "Institute of Data",
     description:

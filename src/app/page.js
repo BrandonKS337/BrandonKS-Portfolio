@@ -3,6 +3,7 @@ import NavBar from "./Components/NavBar";
 import HeroSection from "./Components/HeroSection";
 import AboutSection from "./Components/AboutSection";
 import TechStack from "./Components/TechStack";
+import Experience from "./Components/Experience";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection/>
         <TechStack/>
+        <Experience/>
       </div>
     </div>
   );
