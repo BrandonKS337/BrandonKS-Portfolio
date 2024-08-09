@@ -72,7 +72,7 @@ const TechStack = () => {
   );
 
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="border-b-2 border-neutral-900 pb-24">
       <h2 className="mt-20 text-center text-4xl">Technologies</h2>
       <p className="text-center my-16 lg:px-64">
         Here are a few of the technologies and resources I have familiarized
