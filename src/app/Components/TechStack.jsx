@@ -1,6 +1,8 @@
-'use client'
+'use client';
 
-import React from "react";
+import React, { useEffect } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import AutoScroll from 'embla-carousel-auto-scroll';
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
@@ -19,19 +21,10 @@ import { CgMonday } from "react-icons/cg";
 import { VscVscodeInsiders } from "react-icons/vsc";
 import { SiPostman } from "react-icons/si";
 import { SiSentry } from "react-icons/si";
-import { FaSlack } from "react-icons/fa";
-import { SiVercel } from "react-icons/si";
-
-// Reusable component for technology icons
-const TechIcon = ({ IconComponent, colorClass, label }) => (
-  <div className="rounded-2xl border-4 border-neutral-800 p-4">
-    <IconComponent className={`text-7xl ${colorClass}`} aria-label={label} />
-  </div>
-);
+import { FaSlack }from "react-icons/fa";
+import { SiVercel }from "react-icons/si";
 
 const TechStack = () => {
-  // Array of technology data for the icons
-  // NOTE: pull this out and into index.js later in the constants folder
   const technologies = [
     { Component: RiReactjsLine, color: "text-cyan-400", label: "ReactJS" },
     { Component: TbBrandNextjs, color: "", label: "NextJS" },
@@ -48,12 +41,23 @@ const TechStack = () => {
     { Component: FaNodeJs, color: "text-green-500", label: "NodeJS" },
     { Component: FaAws, color: "text-blue-600", label: "AWS" },
     { Component: SiAmazonec2, color: "text-orange-500", label: "Amazon EC2" },
-    { Component: VscVscodeInsiders, color: "text-cyan-500", label: "VS Code" },
+    { Component: VscVscodeInsiders, color: "text-cyan-500", label: "VS Code Insiders" },
     { Component: SiPostman, color: "text-orange-500 bg-white rounded-2xl", label: "Postman" },
     { Component: SiSentry, color: "text-red-500", label: "Sentry" },
     { Component: FaSlack, color: "", label: "Slack" },
     { Component: SiVercel, color: "", label: "Vercel" },
   ];
+
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: 'center',
+      speed: 1,
+    },
+    [
+      AutoScroll({ playOnInit: true, delay: 2500 }), // Auto-scroll on mount with a delay
+    ]
+  );
 
   return (
     <div className="border-b border-neutral-800 pb-24">
@@ -61,15 +65,19 @@ const TechStack = () => {
       <p className="text-center m-20 px-15">
         Here are a few of the technologies and resources I have familiarized myself with through direct project-based experience.
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-4">
-        {technologies.map((tech, index) => (
-          <TechIcon 
-            key={index} 
-            IconComponent={tech.Component} 
-            colorClass={tech.color} 
-            label={tech.label} 
-          />
-        ))}
+      <div className="embla">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container flex">
+            {technologies.map((tech, index) => (
+              <div className="embla__slide " key={index}>
+                <tech.Component
+                  className={`text-7xl ${tech.color}`}
+                  aria-label={tech.label}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

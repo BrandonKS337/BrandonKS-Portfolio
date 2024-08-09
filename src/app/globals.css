@@ -2,8 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
 
-.logo-svg {
-  border: 2px solid white;
-  fill: white; /* This will apply if the SVG path does not have an explicit fill attribute */
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  flex-direction: row;
+  /* will-change: transform; */
+  /* gap: "5px";  */
+  /*Ensure consistent spacing between slides*/
+}
+
+.embla__slide {
+  flex: 0 0 20%; /* Ensure each slide has a fixed width to prevent overlap */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 40%; /* Adjust slide width for smaller screens */
+    /* gap: "10px"; */
+  }
 }
