@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
+import { motion } from "framer-motion";
+
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
@@ -73,11 +75,23 @@ const TechStack = () => {
 
   return (
     <div className="border-b-2 border-neutral-900 pb-10">
-      <h2 className="mt-20 text-center text-4xl">Technologies</h2>
-      <p className="text-center my-16 lg:px-64">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="mt-20 text-center text-4xl"
+      >
+        Technologies
+      </motion.h2>
+      <motion.p
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -50 }}
+        transition={{ duration: 1.5 }}
+        className="text-center my-16 lg:px-64"
+      >
         Here are a few of the technologies and resources I have familiarized
         myself with through direct project-based experience.
-      </p>
+      </motion.p>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container flex">
