@@ -20,8 +20,8 @@ const ComingSoon = () => {
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg text-center">
         <h1 className="text-2xl font-bold mb-4 text-coral-600">Coming Soon!</h1>
         <p className="text-gray-700 mb-6">
-          Coral is still under development and is not ready just yet. Don't
-          Worry though we are working hard to get the site up and operational as
+          Coral is still under development and is not ready just yet.
+          Worry not though as we are working hard to get the site up and operational as
           quickly as possible!!
         </p>
         <p className="text-gray-700 mb-6">

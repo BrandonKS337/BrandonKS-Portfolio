@@ -29,7 +29,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1.5 }}
         >
-          <a href={`mailto:brandonks337@gmail.com`} className="border-b text-blue-500">
+          <a href={`mailto:${CONTACT.email}`} className="border-b text-blue-500">
             {CONTACT.email}
           </a>
         </motion.span>
