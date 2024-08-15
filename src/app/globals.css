@@ -15,9 +15,6 @@
 .embla__container {
   display: flex;
   flex-direction: row;
-  /* will-change: transform; */
-  /* gap: "5px";  */
-  /*Ensure consistent spacing between slides*/
 }
 
 .embla__slide {
@@ -30,6 +27,5 @@
 @media (max-width: 768px) {
   .embla__slide {
     flex: 0 0 40%; /* Adjust slide width for smaller screens */
-    /* gap: "10px"; */
   }
 }

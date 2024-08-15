@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { HERO_SECTION } from "../../constants";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const profilePic = "/assets/placeholderimages/placeholderProfile.jpg";
@@ -21,7 +20,6 @@ const HeroSection = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 ">
           <div className="flex flex-col items-center lg:items-start">
-            {/* Intro */}
             <motion.h2
               variants={container(0)}
               initial="hidden"
@@ -38,18 +36,16 @@ const HeroSection = () => {
             >
               Full Stack Software Engineer
             </motion.span>
-            <motion.p
+            <motion.span
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-md py-6 font-light tracking-tighter text-xl"
             >
               {HERO_SECTION}
-            </motion.p>
-            {/* <p className="my-2">Placeholder</p> */}
+            </motion.span>
           </div>
         </div>
-        {/* Hero Image */}
         <div className="w-full lg:w-1/2 lg:p-4 ">
           <div className="flex justify-center ">
             <motion.img

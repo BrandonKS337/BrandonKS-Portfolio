@@ -62,19 +62,41 @@ const TechStack = () => {
     { Component: SiVercel, color: "", label: "Vercel" },
   ];
 
-  const [emblaRef] = useEmblaCarousel(
+  const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
       align: "center",
-      speed: 1,
     },
     [
-      AutoScroll({ playOnInit: true, delay: 2500 }), // Auto-scroll on mount with a delay
+      AutoScroll({
+        playOnInit: true,
+        speed: 0.8, // Lower speed for slower scrolling
+        delay: 5000, // Delay between each scroll
+        target: 1.5, // Custom target value to control the scroll speed
+      }),
     ]
   );
 
+  useEffect(() => {
+    if (!emblaApi) return;
+    const restartAutoScroll = () => {
+      const autoScroll = emblaApi.plugins().autoScroll;
+      if (autoScroll) {
+        setTimeout(() => {
+          autoScroll.play();
+        }, 50);
+      }
+    };
+
+    emblaApi.on("pointerUp", restartAutoScroll);
+
+    return () => {
+      emblaApi.off("pointerUp", restartAutoScroll);
+    };
+  }, [emblaApi]);
+
   return (
-    <div className="border-b-2 border-neutral-900 pb-10">
+    <div className="border-b-2 border-neutral-900 pb-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}

@@ -18,11 +18,11 @@ export default function Home() {
       <div className="container mx-auto px-8">
         <NavBar />
         <HeroSection />
-        <AboutSection/>
-        <TechStack/>
-        <Experience/>
-        <Projects/>
-        <Contact/>
+        <AboutSection />
+        <TechStack />
+        <Experience />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
