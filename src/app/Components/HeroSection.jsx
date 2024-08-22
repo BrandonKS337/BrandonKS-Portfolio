@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { HERO_SECTION } from "../../constants";
+import { HERO_SECTION, HERO_SECTION2 } from "../../constants";
 import { motion } from "framer-motion";
 
-const profilePic = "/assets/placeholderimages/placeholderProfile.jpg";
+const profilePic = "/assets/avatars/avatar3.png";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -42,12 +42,12 @@ const HeroSection = () => {
               animate="visible"
               className="my-2 max-w-md py-6 font-light tracking-tighter text-xl"
             >
-              {HERO_SECTION}
+              {HERO_SECTION2}
             </motion.span>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-4 ">
-          <div className="flex justify-center ">
+        <div className="w-full lg:w-1/2 lg:p-3">
+          <div className="flex justify-center align-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -55,6 +55,7 @@ const HeroSection = () => {
               src={profilePic}
               alt="Profile Hero Image"
               className=" rounded-2xl"
+              width={"75%"}
             />
           </div>
         </div>

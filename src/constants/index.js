@@ -1,4 +1,6 @@
-export const HERO_SECTION = `"Your dream inspires the journey, my code builds the path, and together, we create something remarkable."`;
+export const HERO_SECTION = `"Your dream inspires the journey, my code builds the path, and together, we will create something truly remarkable."`;
+
+export const HERO_SECTION2 = `"You inspire the journey, I build the path, and together, we create something truly remarkable."`;
 
 export const ABOUT_ME_TEXT =
   "I am a dedicated and versatile full-stack software engineer with a passion for creating unique, efficient, and user-friendly applications. My expertise spans a variety of technologies, including React, Next.js, MySQL, MongoDB, and AWS EC2, among others. My journey in software engineering began with a deep curiosity about how the internet works, and it has evolved into an ongoing adventure where I continuously engage with new technologies to learn, adapt, and overcome challenges.";
