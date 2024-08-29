@@ -4,7 +4,7 @@ import React from "react";
 import { ABOUT_ME_TEXT, ABOUT_ME_TEXT_2 } from "../../constants";
 import { motion } from "framer-motion";
 
-const aboutMeImg = "/assets/placeholderimages/placeholderProfile.jpg";
+const aboutMeImg = "/assets/avatars/busyDad.png";
 
 const AboutSection = () => {
   return (
@@ -18,7 +18,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="flex items-center w-full lg:w-1/2 lg:p-8 justify-center"
+          className="flex items-center w-full lg:w-2/5 lg:p-8 justify-center"
         >
           <div>
             <img
