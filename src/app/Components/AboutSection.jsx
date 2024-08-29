@@ -4,7 +4,7 @@ import React from "react";
 import { ABOUT_ME_TEXT, ABOUT_ME_TEXT_2 } from "../../constants";
 import { motion } from "framer-motion";
 
-const aboutMeImg = "/assets/avatars/busyDad.png";
+const aboutMeImg = "/assets/avatars/BusyDadAdjusted.webp";
 
 const AboutSection = () => {
   return (
