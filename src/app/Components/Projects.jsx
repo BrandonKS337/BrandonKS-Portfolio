@@ -36,7 +36,7 @@ const Projects = () => {
                 className="my-6 rounded"
               />
               <a href={project.URL}>
-                <button className="bg-green-500 text-black px-4 py-2 rounded-2xl">
+                <button className="bg-green-500 text-black px-4 py-2 rounded">
                   Check It Out
                 </button>
               </a>
