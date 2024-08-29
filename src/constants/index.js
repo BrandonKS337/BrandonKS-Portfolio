@@ -80,6 +80,8 @@ export const PROJECTS = [
   {
     title: "CarePulse",
     image: "/assets/ProjectImages/Carepulse.png",
+    role: 'FullStack Developer, Cloud Database Integrator & DevOps Engineer',
+    contributions: ['Frontend Development', 'Backend Development', 'API integration', 'Database Management', 'SMS Notification Integration', 'Site Monitoring & Analytics'], 
     description:
       "Carepulse is an easy to use Patient and Caretaker application portal that utilizes a simplistic approach in order to schedule and manage medical appointments. It utilizes NextJs for the framework alongside Appwrite for the cloud database, Twilio for SMS notifications about appointment creation and updates & finally Sentry for site traffic monitoring and control.",
     technologies: ["NextJS", "Appwrite", "Twilio", "Sentry"],
@@ -88,6 +90,8 @@ export const PROJECTS = [
   {
     title: "Coral",
     image: "/assets/ProjectImages/CoralMarketplace.png",
+    role: 'Full-Stack Developer & UI/UX Designer',
+    contributions: ['Application Design (Figma)', 'Frontend Development', ' Backend Design & API Development', 'MongoDB Integration', 'Custom Component', 'Page Development', 'Navigation Design & Implementation'],
     description:
       "Coral Marketplace is a simple solution to a unique problem by creating a space where Enthusiasts can Buy/Sell/Trade coral and coral related products. The application is focused around a user-centric design aiming to optimize the easy of finding a particular product in an every changing market inventory.",
     technologies: ["Figma", "NextJS", "MongoDB", "Trello", "NodeJS", "Docker"],
@@ -96,6 +100,8 @@ export const PROJECTS = [
   {
     title: "Fantasy Nexus",
     image: "/assets/ProjectImages/FantasyNexus.png",
+    role: 'Full-Stack Developer & UI/UX Designer',
+    contributions: ['Frontend Development (React)', 'Backend Development (Node.js, Sequelize','MySQL DB Integration', 'Custom Component Development', 'User Experience & Interface Design', 'Feature Development(Ongoing)'],
     description:
       "Fantasy Nexus is a Personal Project that I started developing as part of My Capstone for the Institute of Data. Its intent is to create a more interactive experience for players of the table top RPG Dungeons and Dragons by creating an inviting UI that is easily navigatable but still contains a broad scope of usability. It utilizes a React framework and uses NodeJS paired with sequelize to coordinate with a MySQL database. There is a custom Playing card style component that is being used to show off active resources like player characters in a more modern and fun way as well as some other features currently under development.",
     technologies: ["React", "Node/Express", "MySQL", "Sequelize", "Docker"],

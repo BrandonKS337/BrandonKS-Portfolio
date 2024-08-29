@@ -37,7 +37,7 @@ const Projects = () => {
               />
               <a href={project.URL}>
                 <button className="bg-green-500 text-black px-4 py-2 rounded-2xl">
-                  Click to Visit
+                  Check It Out
                 </button>
               </a>
             </motion.div>
@@ -45,9 +45,9 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full mx-q-xl lg:w-3/4"
+              className="mb-10 w-full mx-q-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <h4 className="mb-1 font-semibold">{project.title}</h4>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="w-full max-w-xl lg:w-3/4 flex flex-wrap mb-8">
                 {project.technologies.map((tech, index) => (
@@ -56,6 +56,19 @@ const Projects = () => {
                     className="mr-2 mt-4 rounded bg-neutral-800 px-2 py-1 text-sm font-medium"
                   >
                     {tech}
+                  </span>
+                ))}
+              </div>
+              <h6 className="mb-2 text-neutral-300">Project Role:</h6>
+              <p className="mb-4 text-neutral-400"> {project.role}</p>
+              <h6 className="mb-1 text-neutral-300">Project Contributions:</h6>
+              <div className="w-full max-w-xl lg:w-3/4 flex flex-wrap">
+                {project.contributions.map((items, index) => (
+                  <span
+                    key={index}
+                    className="mr-2 mt-4 rounded bg-neutral-800 px-2 py-1 text-sm font-medium"
+                  >
+                    {items}
                   </span>
                 ))}
               </div>
