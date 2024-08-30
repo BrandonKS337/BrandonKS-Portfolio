@@ -47,7 +47,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="mb-10 w-full mx-q-xl lg:w-3/4"
             >
-              <h4 className="mb-1 font-semibold">{project.title}</h4>
+              <h4 className="mb-1 font-semibold text-2xl">{project.title}</h4>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="w-full max-w-xl lg:w-3/4 flex flex-wrap mb-8">
                 {project.technologies.map((tech, index) => (
