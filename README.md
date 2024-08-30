@@ -1,3 +1,7 @@
+This Repository Project is a personal portfolio website for myself used as a fun way to show off my skills in a quick simple way. It is deployed through Vercel using a Custom DNS purchased elsewhere and utilizes Next.js as well as motion-framer and Tailwind CSS. It was a ton of fun to make and very flexible in implementing quick changes thanks to its dynamic components. Below is default setup information if you would like to mimic the project as the design is open source and fair use anyway. Happy coding friends!
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
