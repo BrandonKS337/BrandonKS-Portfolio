@@ -30,17 +30,13 @@ const ComingSoon = () => {
         </p>
         <p className="text-gray-700 mb-6">
           Please keep posted and come back later as we are working hard to reach
-          our baseline MVP so that you won&apost have to wait long to utilize
-          it!
+          our baseline MVP so that you will not have to wait long to utilize it!
         </p>
-        <div className="bg-blue-600 hover:bg-blue-800 rounded">
-          <button
-            onClick={handleBackClick}
-            className="bg-coral-500 hover:bg-coral-600 text-white font-bold py-2 px-4 rounded"
-          >
+        <button onClick={handleBackClick} className="rounded w-full">
+          <p className="bg-blue-600 hover:bg-blue-800 rounded text-white font-bold py-2 px-4 ">
             Go Back
-          </button>
-        </div>
+          </p>
+        </button>
       </div>
     </div>
   );
