@@ -10,7 +10,7 @@ export const ABOUT_ME_TEXT_2 =
 
 export const EXPERIENCES = [
   {
-    year: "2024 - Present",
+    year: "2025 - Present",
     role: "Appian Consultant / Replatform Project Lead",
     company: "Ignyte Group, LLC",
     description:
