@@ -81,7 +81,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "2015 - Present",
+    year: "2015 - 2025",
     role: "Field Supervisor / Senior Technical Instructor",
     company: "TNT Cable Contractors",
     description:
