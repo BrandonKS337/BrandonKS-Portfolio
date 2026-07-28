@@ -6,9 +6,34 @@ export const ABOUT_ME_TEXT =
   "So a bit about me, my name is Brandon and I'm an energetic and driven Full Stack Software Engineer who deeply values family and personal connections. I thrive on working towards my goals while fostering excellent camaraderie within my team. Juggling multiple tasks is second nature to me, thanks to my experience raising two kids and managing a zoo's worth of pets. I'm passionate about creating unique, efficient, and user-friendly applications from design to deployment and beyond. My expertise spans a variety of technologies, including React, Next.js, MySQL, MongoDB, and AWS EC2. My journey in software engineering began with a deep curiosity about how the internet works and has evolved into an ongoing adventure where I continuously engage with new technologies, learn, adapt, and overcome challenges.";
 
 export const ABOUT_ME_TEXT_2 =
-  " What drives me is the thrill of solving complex problems and the satisfaction of seeing my work make a tangible impact. I am committed to continuous learning and strive to bring creativity and innovation into everything I build. Beyond the code, I value collaboration and believe that the best solutions come from working closely with others who share the same vision. My goal is to leverage my experiences to develop innovative solutions that drive business growth, enhance user experiences, and contribute to meaningful projects.";
+  "What drives me is the thrill of solving complex problems and the satisfaction of seeing my work make a tangible impact. I am committed to continuous learning and strive to bring creativity and innovation into everything I build. Beyond the code, I value collaboration and believe that the best solutions come from working closely with others who share the same vision. My goal is to leverage my experiences to develop innovative solutions that drive business growth, enhance user experiences, and contribute to meaningful projects.";
 
 export const EXPERIENCES = [
+  {
+    year: "2024 - Present",
+    role: "Appian Consultant / Replatform Project Lead",
+    company: "Ignyte Group, LLC",
+    description:
+      "Ignyte Group is a premier digital transformation consultancy specializing in enterprise modernization through the Appian low-code platform. As the Replatform Lead supporting multiple U.S. Department of Veterans Affairs modernization initiatives, I lead the migration of mission-critical legacy applications to modern, scalable Appian solutions. My responsibilities span solution architecture, technical leadership, application development, process automation, enterprise integrations, and mentoring developers throughout the software development lifecycle. Working within Agile teams, I collaborate closely with architects, business stakeholders, and fellow engineers to deliver secure, high-performance applications that improve operational efficiency while meeting rigorous federal security and compliance requirements. My work combines hands-on software engineering with technical leadership, helping establish development standards, modernize legacy systems, and deliver scalable enterprise solutions across multiple applications.",
+    technologies: [
+      "Appian",
+      "Application Architecture",
+      "Enterprise Integrations",
+      "Process Automation",
+      "Java",
+      "SQL",
+      "PostgreSQL",
+      "MariaDB",
+      "REST APIs",
+      "SOAP",
+      "JSON",
+      "Agile/Scrum",
+      "Bitbucket",
+      "Lucidchart",
+      "Figma",
+      "Technical Documentation",
+    ],
+  },
   {
     year: "2024 - Present",
     role: "Full Stack Software Engineer",
@@ -80,8 +105,15 @@ export const PROJECTS = [
   {
     title: "CarePulse",
     image: "/assets/ProjectImages/Carepulse.png",
-    role: 'FullStack Developer, Cloud Database Integrator & DevOps Engineer',
-    contributions: ['Frontend Development', 'Backend Development', 'API integration', 'Database Management', 'SMS Notification Integration', 'Site Monitoring & Analytics'], 
+    role: "FullStack Developer, Cloud Database Integrator & DevOps Engineer",
+    contributions: [
+      "Frontend Development",
+      "Backend Development",
+      "API integration",
+      "Database Management",
+      "SMS Notification Integration",
+      "Site Monitoring & Analytics",
+    ],
     description:
       "Carepulse is an easy to use Patient and Caretaker application portal that utilizes a simplistic approach in order to schedule and manage medical appointments. It utilizes NextJs for the framework alongside Appwrite for the cloud database, Twilio for SMS notifications about appointment creation and updates & finally Sentry for site traffic monitoring and control.",
     technologies: ["NextJS", "Appwrite", "Twilio", "Sentry"],
@@ -90,8 +122,16 @@ export const PROJECTS = [
   {
     title: "Coral",
     image: "/assets/ProjectImages/CoralMarketplace.png",
-    role: 'Full-Stack Developer & UI/UX Designer',
-    contributions: ['Application Design (Figma)', 'Frontend Development', ' Backend Design & API Development', 'MongoDB Integration', 'Custom Component', 'Page Development', 'Navigation Design & Implementation'],
+    role: "Full-Stack Developer & UI/UX Designer",
+    contributions: [
+      "Application Design (Figma)",
+      "Frontend Development",
+      " Backend Design & API Development",
+      "MongoDB Integration",
+      "Custom Component",
+      "Page Development",
+      "Navigation Design & Implementation",
+    ],
     description:
       "Coral Marketplace is a simple solution to a unique problem by creating a space where Enthusiasts can Buy/Sell/Trade coral and coral related products. The application is focused around a user-centric design aiming to optimize the easy of finding a particular product in an every changing market inventory.",
     technologies: ["Figma", "NextJS", "MongoDB", "Trello", "NodeJS", "Docker"],
@@ -100,8 +140,15 @@ export const PROJECTS = [
   {
     title: "Fantasy Nexus",
     image: "/assets/ProjectImages/FantasyNexus.png",
-    role: 'Full-Stack Developer & UI/UX Designer',
-    contributions: ['Frontend Development (React)', 'Backend Development (Node.js, Sequelize','MySQL DB Integration', 'Custom Component Development', 'User Experience & Interface Design', 'Feature Development(Ongoing)'],
+    role: "Full-Stack Developer & UI/UX Designer",
+    contributions: [
+      "Frontend Development (React)",
+      "Backend Development (Node.js, Sequelize",
+      "MySQL DB Integration",
+      "Custom Component Development",
+      "User Experience & Interface Design",
+      "Feature Development(Ongoing)",
+    ],
     description:
       "Fantasy Nexus is a Personal Project that I started developing as part of My Capstone for the Institute of Data. Its intent is to create a more interactive experience for players of the table top RPG Dungeons and Dragons by creating an inviting UI that is easily navigatable but still contains a broad scope of usability. It utilizes a React framework and uses NodeJS paired with sequelize to coordinate with a MySQL database. There is a custom Playing card style component that is being used to show off active resources like player characters in a more modern and fun way as well as some other features currently under development.",
     technologies: ["React", "Node/Express", "MySQL", "Sequelize", "Docker"],
@@ -113,4 +160,5 @@ export const CONTACT = {
   address: "Youngsville, LA",
   phone: "337-254-4704",
   email: "BrandonKS337@gmail.com",
+  linkedIn: "https://www.linkedin.com/in/brandonks/"
 };
